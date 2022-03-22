@@ -31,4 +31,6 @@ Finally, on ./build go to **debug** folder (created by `swift run || swift build
 Example: `./passgen --size 12 --pass_name name`  
   
 ![Demo1Gif](https://user-images.githubusercontent.com/75648725/159500212-d1a8e5a3-9c54-4182-b5a4-25f1612d0725.gif)  
-When you run the script, will be created a `senhas.txt`in your home directory to storage all passwords.
+When you run the script, will be created a `senhas.txt`in your home directory to storage all passwords.  
+  
+@Code by Luiz Sena at Apple Developer Academy 
