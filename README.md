@@ -24,4 +24,10 @@ OBS: The project may be had not a clean code, i'm working on.
 git clone https://github.com/Luizerz/PassGen.git
 swift run || swift build
 ```  
+After this, will be created a folder named by .build, where you'll find the binary executable. Be careful, in linux/macOS all ./ folders are hidden.
 ### To execute properly you need to use a terminal and put the arguments.
+Finally, on ./build go to **debug** folder (created by `swift run || swift build` as ./build) and there will be your binary executable file, they need to be called on terminal because the program need to arguments be wrote on input.  
+
+Example: `./passgen --size 12 --pass_name name`  
+  
+![Demo1Gif](https://user-images.githubusercontent.com/75648725/159500212-d1a8e5a3-9c54-4182-b5a4-25f1612d0725.gif)
