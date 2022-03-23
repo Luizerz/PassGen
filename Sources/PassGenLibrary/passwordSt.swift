@@ -14,16 +14,18 @@ extension String {
     }
 }
 
-struct passwordSt: ParsableCommand {
+public struct passwordSt: ParsableCommand {
     
-    static var configuration = CommandConfiguration(commandName: "passgen")
+   public static var configuration = CommandConfiguration(commandName: "passgen")
     
     @Option(name: NameSpecification.shortAndLong, help: "Size of password")
     var size: Int
     @Option(name: NameSpecification.shortAndLong, help: "Name to be assigned to password")
     var pass_name: String
     
-    func run() throws {
+    public init() { }
+    
+    public func run() throws {
         var password = ""
         
         while true{
