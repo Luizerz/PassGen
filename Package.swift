@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "Password-Generetor",
+    products: [
+        .library(name: "PassGen", targets: ["PassGenLibrary"])
+    ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git" /* package url */, from: "1.0.0"),
     ],
