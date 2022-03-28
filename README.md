@@ -18,6 +18,9 @@ Restrictions:
 
 OBS: The project may be had not a clean code, i'm working on.
 
+# Why PassGen?
+I was looking for something to help me on my daily tests, day by day i use and create a lot of passwords, and this program help me to manage all passwords in a simple way.
+
 # How work it ?  
 ### First of all, you need to clone this repo, following you'll need to do a swift run or swift build and then you can execute the binary.
 ```terminal
