@@ -56,16 +56,3 @@ func fileVerify() -> Bool {
     let filePath = NSHomeDirectory() + "/senhas.txt"
     return FileManager.default.fileExists(atPath: filePath)
 }
-
-
-
-//func openG(url : String) {
-//    let ls = Process()
-//    ls.executableURL = URL(fileURLWithPath: "/usr/bin/open")
-//    ls.arguments = [url]
-//    do{
-//      try ls.run()
-//    } catch {
-//        print(error.localizedDescription)
-//    }
-//}
