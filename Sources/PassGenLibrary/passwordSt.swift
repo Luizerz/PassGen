@@ -16,7 +16,7 @@ extension String {
 
 public struct passwordSt: ParsableCommand {
     
-   public static var configuration = CommandConfiguration(commandName: "passgen")
+    public static var configuration = CommandConfiguration(commandName: "passgen")
     
     @Option(name: NameSpecification.shortAndLong, help: "Size of password")
     var size: Int
