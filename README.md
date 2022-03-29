@@ -21,9 +21,9 @@ OBS: The project may be had not a clean code, i'm working on.
 # Why PassGen?
 I was looking for something to help me on my daily tests, day by day i use and create a lot of passwords, and this program help me to manage all passwords in a simple way.  
   
-# Installing with brew.  
+# <img src="https://user-images.githubusercontent.com/75648725/160658125-ddd149bd-54d3-424c-8d83-1afecb03f107.png" alt="brewImage" width="50" height="50"/> Installing with brew.  
 
-<img src="https://user-images.githubusercontent.com/75648725/160658125-ddd149bd-54d3-424c-8d83-1afecb03f107.png" alt="brewImage" width="50" height="50"/> First, you need to had a brew installed on your macOS/Linux, then you run the follow commands:  
+First, you need to had a brew installed on your macOS/Linux, then you run the follow commands:  
 
 ```
 brew tap Luizerz/PassGen 
