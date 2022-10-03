@@ -14,6 +14,11 @@ extension String {
     }
 }
 
+enum ValidationError: Error {
+    case tooShort
+    case tooLong
+}
+
 public struct passwordSt: ParsableCommand {
     
     public static var configuration = CommandConfiguration(commandName: "passgen")
@@ -29,17 +34,18 @@ public struct passwordSt: ParsableCommand {
         var password = ""
         
         while true{
-            
-            if size < 8 {
+            do {
+                try verifyError(size: size)
+            } catch ValidationError.tooShort{
                 print(error)
                 print("\nThe password length cannot be less than 8")
                 break
-            }else if size > 32 {
+            } catch ValidationError.tooLong {
                 print(error)
-                print("\nThe password length cannot be less than 32")
+                print("\nThe password length cannot be more than 32")
                 break
-            }else{
-                print(message, terminator: "")
+            }
+                print(messag, terminator: "")
                 while validadePassword(password: password) != 4 {
                     password = randomString(length: size)
                 }
@@ -55,7 +61,15 @@ public struct passwordSt: ParsableCommand {
                     print(error)
                 }
                 break
-            }
+        }
+    }
+    
+    private func verifyError(size: Int) throws{
+        if size < 8 {
+            throw ValidationError.tooShort
+            
+        }else if size > 32 {
+            throw ValidationError.tooLong
         }
     }
     
