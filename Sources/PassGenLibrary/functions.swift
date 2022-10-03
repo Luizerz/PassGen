@@ -32,12 +32,12 @@ func createFile(){
     if fileVerify() == false {
         (FileManager.default.createFile(atPath: filePath, contents: nil, attributes: nil))
         if fileVerify() {
-            print("Arquivo criado com sucesso.")
+            print("File created with success.")
         } else {
-            print("O Arquivo não foi criado, tente novamente.")
+            print("The file dont`t created, retry.")
         }
     } else {
-        print("Arquivo já existe")
+        print("Empty file")
     }
 }
 

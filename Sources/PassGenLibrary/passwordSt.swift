@@ -32,33 +32,30 @@ public struct passwordSt: ParsableCommand {
             
             if size < 8 {
                 print(error)
-                print("\nO tamaho da senha não pode ser menor que 8")
+                print("\nThe password length cannot be less than 8")
                 break
             }else if size > 32 {
                 print(error)
-                print("\nO tamaho da senha não pode ser maior que 32")
+                print("\nThe password length cannot be less than 32")
                 break
             }else{
-                print(mensagem, terminator: "")
+                print(message, terminator: "")
                 while validadePassword(password: password) != 4 {
                     password = randomString(length: size)
                 }
-                print("\n\nSua senha para \(pass_name) é \(password)", terminator: "")
-                print("\nSua senha tem \((Double(validadePassword(password: password))/4)*100)" + "% de força\n")
+                print("\n\nYour password \(pass_name) is \(password)", terminator: "")
+                print("\nYour password to \((Double(validadePassword(password: password))/4)*100)" + "% of force\n")
                 createFile()
                 writeFile(pass_name: pass_name, password: password)
                 let filePath = NSHomeDirectory() + "/senhas.txt"
                 do{
-                    let testando = try String(contentsOf: URL(fileURLWithPath: filePath))
-                    print(testando)
+                    let testing = try String(contentsOf: URL(fileURLWithPath: filePath))
+                    print(testing)
                 }catch{
                     print(error)
                 }
                 break
             }
-            
-            
-            
         }
     }
     
