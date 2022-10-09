@@ -8,17 +8,16 @@
 import Foundation
 import ArgumentParser
 
-func validadePassword(password: String) -> Int{
-    var aux2 = 0
-    if (8 <= password.count && 32 >= password.count){
-        //print("Fuciona/entroou") debug
-        if password.matches(".*\\d.*"){aux2 = aux2 + 1}
-        if password.matches(".*[a-z].*"){aux2 = aux2 + 1}
-        if password.matches(".*[A-Z].*"){aux2 = aux2 + 1}
-        if password.matches(#".[.!@#$%^&(){}[:"';<>,.?/~`+]-\\=|].*"#){aux2 = aux2 + 1}
-
+func validadePassword(password: String) -> Int {
+    var operationProgress = 0
+    if (SizeConstants.Min.rawValue <= password.count && SizeConstants.Max.rawValue >= password.count){
+        if password.matches(".*\\d.*"){operationProgress += 1}
+        if password.matches(".*[a-z].*"){operationProgress += 1}
+        if password.matches(".*[A-Z].*"){operationProgress += 1}
+        if password.matches(#".[.!@#$%^&(){}[:"';<>,.?/~`+]-\\=|].*"#){operationProgress += 1}
     }
-    return aux2
+
+    return operationProgress
 }
 
 func randomString(length: Int) -> String {

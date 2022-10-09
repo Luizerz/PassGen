@@ -14,6 +14,11 @@ extension String {
     }
 }
 
+enum SizeConstants: Int {
+    case Min = 8
+    case Max = 32
+}
+
 enum ValidationError: Error {
     case tooShort
     case tooLong
@@ -64,11 +69,11 @@ public struct passwordSt: ParsableCommand {
         }
     }
     
-    private func verifyError(size: Int) throws{
-        if size < 8 {
+    private func verifyError(size: Int) throws {
+        if size < SizeConstants.Min.rawValue {
             throw ValidationError.tooShort
             
-        }else if size > 32 {
+        } else if size > SizeConstants.Max.rawValue {
             throw ValidationError.tooLong
         }
     }
