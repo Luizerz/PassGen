@@ -9,15 +9,15 @@ import Foundation
 import ArgumentParser
 
 func validadePassword(password: String) -> Int {
-    var operationProgress = 0
+    var creationProgress = 0
     if (SizeConstants.Min.rawValue <= password.count && SizeConstants.Max.rawValue >= password.count){
-        if password.matches(".*\\d.*"){operationProgress += 1}
-        if password.matches(".*[a-z].*"){operationProgress += 1}
-        if password.matches(".*[A-Z].*"){operationProgress += 1}
-        if password.matches(#".[.!@#$%^&(){}[:"';<>,.?/~`+]-\\=|].*"#){operationProgress += 1}
+        if password.matches(".*\\d.*"){creationProgress += 1}
+        if password.matches(".*[a-z].*"){creationProgress += 1}
+        if password.matches(".*[A-Z].*"){creationProgress += 1}
+        if password.matches(#".[.!@#$%^&(){}[:"';<>,.?/~`+]-\\=|].*"#){creationProgress += 1}
     }
 
-    return operationProgress
+    return creationProgress
 }
 
 func randomString(length: Int) -> String {
