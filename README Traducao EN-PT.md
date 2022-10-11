@@ -7,16 +7,16 @@
 ╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝
                                                            
 ``` 
-# Password-Generetor
+# Gerador de senha
 
-Building a strong password in a simple way.
+Construindo uma senha forte com um jeito simples.
 
-Restrictions:  
-- the password lenght had to be between 8 and 32 characteres.  
-- can't be a string.  
-- can be assigned for empty name
+Restrições:  
+- O tamanho da senha tem que ter entre 8 e 32 caracteres.  
+- Não pode ser string.  
+- Pode ser um valor vazio.
 
-OBS: The project may be had not a clean code, i'm working on.
+OBS: O projeto não ter um código muito claro/limpo, eu estou trabalhando nisso.
 
 # Why PassGen?
 I was looking for something to help me on my daily tests, day by day i use and create a lot of passwords, and this program help me to manage all passwords in a simple way.  
