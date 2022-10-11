@@ -32,12 +32,12 @@ brew install PassGen
 logo após execute o comando:
 `passgen -s size -p name`
 # Como ele funciona ?  
-### First of all, you need to clone this repo, following you'll need to do a swift run or swift build and then you can execute the binary.
+###  Primeiro de tudo, você precisa clonar esse repositório, a seguir você vai precisar fazer um swift run ou swift build e depois você pode executar.
 ```terminal
 git clone https://github.com/Luizerz/PassGen.git
 swift run || swift build
 ```  
-After this, will be created a folder named by .build, where you'll find the binary executable. **Be careful, in linux/macOS all .folders are hidden.**
+Após isso, vai ser criada uma pasta chamada .build, onde você vai encontrar todos os executáveis. **Cuidado, no linux/macOS todas as .pastas estão ocultas.**
 ### To execute properly you need to use a terminal and put the arguments.
 Finally, on ./build go to **debug** folder (created by `swift run || swift build` as ./build) and there will be your binary executable file, they need to be called on terminal because the program need to arguments be wrote on input.  
 
