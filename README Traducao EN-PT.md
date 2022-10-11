@@ -38,12 +38,12 @@ git clone https://github.com/Luizerz/PassGen.git
 swift run || swift build
 ```  
 Após isso, vai ser criada uma pasta chamada .build, onde você vai encontrar todos os executáveis. **Cuidado, no linux/macOS todas as .pastas estão ocultas.**
-### To execute properly you need to use a terminal and put the arguments.
-Finally, on ./build go to **debug** folder (created by `swift run || swift build` as ./build) and there will be your binary executable file, they need to be called on terminal because the program need to arguments be wrote on input.  
+### Para executar corretamente você vai precisar usar um terminal e colocar os argumentos.
+Finalmente, na ./build acesse a pasta **debug** (criado pelo `swift run || swift build` como um ./build) e terá o seu arquivo executável, eles precisam ser chamados no terminal porque os argumentos precisam ser escritos na entrada do programa.  
 
-Example: `./passgen --size 12 --pass_name name`  or with [brew install](https://github.com/Luizerz/PassGen/edit/master/README.md#installing-with-brew) `passgen --size 12 --pass_name name`.
+Exemplo: `./passgen --size 12 --pass_name name`  ou usando [brew install](https://github.com/Luizerz/PassGen/edit/master/README.md#installing-with-brew) `passgen --size 12 --pass_name name`.
   
 ![Demo1Gif](https://user-images.githubusercontent.com/75648725/159500212-d1a8e5a3-9c54-4182-b5a4-25f1612d0725.gif)  
-When you run the script, will be created a `senhas.txt`in your home directory to storage all passwords.  
+Quando você rodar o script, será criado o arquivo `senhas.txt` no seu diretório principal para armazenar todas as senhas.  
   
-*@Code by Luiz Sena at Apple Developer Academy*
+*@Criado por Luiz Sena da Apple Developer Academy*
