@@ -16,10 +16,10 @@ Restrições:
 - Não pode ser string.  
 - Pode ser um valor vazio.
 
-OBS: O projeto não ter um código muito claro/limpo, eu estou trabalhando nisso.
+OBS: O projeto não tem um código muito claro/limpo, eu estou trabalhando nisso.
 
-# Why PassGen?
-I was looking for something to help me on my daily tests, day by day i use and create a lot of passwords, and this program help me to manage all passwords in a simple way.  
+# Por que PassGen?
+Eu estava procurando por algo que me ajudasse nos meus testes diários, no meu dia a dia eu uso e crio muitas senhas, e esse programa me ajuda a gerenciar todas as senhas de uma forma simples.  
   
 # <img src="https://user-images.githubusercontent.com/75648725/160658125-ddd149bd-54d3-424c-8d83-1afecb03f107.png" alt="brewImage" width="50" height="50"/> Installing with brew.  
 
