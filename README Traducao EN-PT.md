@@ -21,17 +21,17 @@ OBS: O projeto não tem um código muito claro/limpo, eu estou trabalhando nisso
 # Por que PassGen?
 Eu estava procurando por algo que me ajudasse nos meus testes diários, no meu dia a dia eu uso e crio muitas senhas, e esse programa me ajuda a gerenciar todas as senhas de uma forma simples.  
   
-# <img src="https://user-images.githubusercontent.com/75648725/160658125-ddd149bd-54d3-424c-8d83-1afecb03f107.png" alt="brewImage" width="50" height="50"/> Installing with brew.  
+# <img src="https://user-images.githubusercontent.com/75648725/160658125-ddd149bd-54d3-424c-8d83-1afecb03f107.png" alt="brewImage" width="50" height="50"/> Instalando com o brew.   
 
-First, you need to had a brew installed on your macOS/Linux, then you run the follow commands:  
+Primeiramente, você precisa ter o brew instalado no seu macOS/Linux, depois siga os comandos abaixo:
 
 ```
 brew tap Luizerz/PassGen 
 brew install PassGen 
 ```  
-and just run the code:  
+logo após execute o comando:
 `passgen -s size -p name`
-# How work it ?  
+# Como ele funciona ?  
 ### First of all, you need to clone this repo, following you'll need to do a swift run or swift build and then you can execute the binary.
 ```terminal
 git clone https://github.com/Luizerz/PassGen.git
